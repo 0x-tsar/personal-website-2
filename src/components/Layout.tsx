@@ -4,7 +4,7 @@ import Header from "./Header";
 
 export const Container = styled.div`
   background-color: #feefe1;
-  font-family: monospace;
+  font-family: "Anonymous Pro";
 
   width: 100vw;
   height: 100vh;
@@ -22,7 +22,7 @@ type Props = {};
 const Layout: FC<PropsWithChildren<Props>> = ({ children }) => {
   return (
     <Container>
-      <Header></Header>
+      <Header />
       {children}
     </Container>
   );
