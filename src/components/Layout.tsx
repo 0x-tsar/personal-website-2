@@ -5,6 +5,7 @@ import Header from "./Header";
 export const Container = styled.div`
   background-color: #feefe1;
   font-family: "Anonymous Pro";
+  color: black;
 
   width: 100vw;
   height: 100vh;

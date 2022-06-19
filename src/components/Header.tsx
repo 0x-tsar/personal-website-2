@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
 export const Container = styled.div`
   grid-area: header;
@@ -20,7 +21,8 @@ const Menu = styled.div`
   margin-top: 1.4em;
   font-size: 1.2em;
 
-  div {
+  li {
+    list-style: none;
     :hover {
       text-decoration: underline;
     }
@@ -34,10 +36,30 @@ const Header = (props: Props) => {
     <Container>
       <h1>Gustavo Fernandes</h1>
       <Menu>
-        <div>Home</div> &nbsp;
-        <div>Quotes</div> &nbsp;
-        <div>Bookshelf</div> &nbsp;
-        <div>My Projects</div> &nbsp;
+        <li>
+          <Link href={"/"}>
+            <a>Home</a>
+          </Link>
+        </li>
+        &nbsp;
+        <li>
+          <Link href={"/quotes"}>
+            <a>Quotes</a>
+          </Link>
+        </li>
+        &nbsp;
+        <li>
+          <Link href={"/bookshelf"}>
+            <a>Bookshelf</a>
+          </Link>
+        </li>
+        &nbsp;
+        <li>
+          <Link href={"/projects"}>
+            <a>My Project</a>
+          </Link>
+        </li>
+        &nbsp;
       </Menu>
     </Container>
   );
