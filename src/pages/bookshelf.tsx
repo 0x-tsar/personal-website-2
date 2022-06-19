@@ -9,6 +9,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
+  font-size: 1.2em;
 `;
 
 const Bookshelf: NextPage = (props: Props) => {

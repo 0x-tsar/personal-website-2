@@ -34,7 +34,7 @@ type Props = {};
 const Header = (props: Props) => {
   return (
     <Container>
-      <h1>Gustavo Fernandes</h1>
+      <h1>Gustavo Fernandes v2</h1>
       <Menu>
         <li>
           <Link href={"/"}>

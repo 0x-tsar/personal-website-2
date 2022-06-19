@@ -9,6 +9,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 100px;
+  font-size: 1.2em;
 `;
 
 export const Holder = styled.div`
