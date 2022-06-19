@@ -7,4 +7,4 @@ const Projects: NextPage = (props: Props) => {
   return <div>Project</div>;
 };
 
-export default Project;
+export default Projects;

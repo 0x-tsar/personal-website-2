@@ -8,7 +8,8 @@ export const Container = styled.div`
   color: black;
 
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
 
   display: grid;
   grid-template-columns: 1fr;
