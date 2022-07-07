@@ -85,6 +85,12 @@ const Bookshelf: NextPage = (props: Props) => {
         <br></br>
         <br></br>
       </div>
+      <div>
+        <p>Os Segredos da Mente Milionária</p>
+        <strong>- T. Harv Eker</strong>
+        <br></br>
+        <br></br>
+      </div>
       <br></br>
       <br></br>
       <br></br>
