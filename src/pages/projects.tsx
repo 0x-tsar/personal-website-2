@@ -463,7 +463,10 @@ const Projects: NextPage = (props: Props) => {
             <h4>{item.title}</h4>
             <p>{item.description}</p>
             {item.website ? (
-              <a href={item.website}>
+              <a
+                href={item.website}
+                style={{ color: "blue", textDecoration: "underline" }}
+              >
                 {item.title + " website"}
                 <br></br>
                 <br></br>
@@ -476,7 +479,7 @@ const Projects: NextPage = (props: Props) => {
             </div>
             <br />
             {item.github ? (
-              <div>
+              <div style={{ color: "blue", textDecoration: "underline" }}>
                 <a href={item.github}>Project repository</a>
               </div>
             ) : (
