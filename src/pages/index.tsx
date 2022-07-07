@@ -37,7 +37,7 @@ const Home: NextPage = () => {
       &nbsp; I speak English, French and Portuguese [currently learning Russian]
       . I like learning new things related to Science or new Technologies and on
       my free time I like to watch code magicians like Daniel Shiffman, CJ from
-      The Coding Garden and George Hotz.
+      The Coding Garden, George Hotz and off course, Patrick Collins.
       <br />
       &nbsp;
       <div>I'm open for hiring or collaboration.</div>
