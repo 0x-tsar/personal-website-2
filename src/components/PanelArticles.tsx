@@ -62,6 +62,14 @@ export const PanelArticles = (props: Props) => {
         tags={["Oracles", "ChainLink", "Link"]}
         text={""}
       ></EachArticle>
+      <EachArticle
+        title={"O que São Stable Coins?"}
+        description={
+          "Para que servem as Stable Coins e por que você deveria usá-las"
+        }
+        tags={["Stable", "Stable Coins"]}
+        text={""}
+      ></EachArticle>
     </Container>
   );
 };
