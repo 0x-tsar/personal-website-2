@@ -56,6 +56,10 @@ export const quotes = [
     author: "– Norman draper",
   },
   {
+    quote: "The distance between dreams and reality is called discipline.",
+    author: "- Paulo Coelho",
+  },
+  {
     quote:
       "It is dangerous to be right in matters where established men are wrong.",
     author: "",
