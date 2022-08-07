@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import articles from "../libs/articles";
 
 export const Container = styled.div`
   background-color: blue;
@@ -54,22 +55,17 @@ export const EachArticle = (props: ArticleType) => {
 export const PanelArticles = (props: Props) => {
   return (
     <Container>
-      <EachArticle
-        title={"O que São Oracles?"}
-        description={
-          "Para que servem as Oracles no mundo Blockchain? Quais suas vantagens?"
-        }
-        tags={["Oracles", "ChainLink", "Link"]}
-        text={""}
-      ></EachArticle>
-      <EachArticle
-        title={"O que São Stable Coins?"}
-        description={
-          "Para que servem as Stable Coins e por que você deveria usá-las"
-        }
-        tags={["Stable", "Stable Coins"]}
-        text={""}
-      ></EachArticle>
+      {articles.map((item, key) => {
+        return (
+          <EachArticle
+            key={key}
+            title={item.title}
+            description={item.description}
+            tags={item.tags}
+            text={item.text}
+          ></EachArticle>
+        );
+      })}
     </Container>
   );
 };
