@@ -1,11 +1,14 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import styled from "styled-components";
 import articles from "../libs/articles";
 
 export const Container = styled.div`
-  background-color: blue;
-  color: white;
+  /* background-color: blue; */
+  color: black;
   font-size: 2em;
+  /* display: inline-flex; */
+  display: flex;
 `;
 
 type Props = {};
@@ -21,6 +24,7 @@ type ArticleType = {
 export const EachArticle = (props: ArticleType) => {
   return (
     <div style={{ padding: "20px", cursor: "pointer" }}>
+      <img style={{ maxWidth: "300px" }} src={props.picture} alt="thumb" />
       <h2>{props.title}</h2>
       <p>{props.description}</p>
       {props.tags?.map((item, key) => {
@@ -28,6 +32,7 @@ export const EachArticle = (props: ArticleType) => {
           <span
             style={{
               fontSize: "15px",
+              color: "white",
               backgroundColor: "red",
               borderRadius: "3px",
               maxWidth: "fit-content",
@@ -63,6 +68,7 @@ export const PanelArticles = (props: Props) => {
             description={item.description}
             tags={item.tags}
             text={item.text}
+            picture={item.picture}
           ></EachArticle>
         );
       })}

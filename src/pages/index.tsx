@@ -4,6 +4,8 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "../../styles/Home.module.css";
 import styled from "styled-components";
+import Image from "next/image";
+import nft from "../../public/nfts.png";
 
 export const Container = styled.div`
   display: flex;
@@ -29,9 +31,9 @@ const Home: NextPage = () => {
       &nbsp; I'm a self taught programmer, Currently focusing on the Crypto
       world. Throughout the years I created Android Apps with Java, models of
       Deep Learning with Python, AI with Javascript, but currently I'm focused
-      on Crypto using technologies like Web3, Ethers, Truffle, Hardhat,
-      Solidity, Oracles, React, NextJS and so on. I'm now building DeFi and NFT
-      DApps. I also build Backend servers with Node, made some bots with it.
+      on Crypto using technologies like Web3, Ethers, Hardhat, Solidity,
+      Oracles, React, NextJS and so on. I'm now building DeFi and NFT DApps. I
+      also build Backend servers with Node, made some bots with it.
       <br></br>
       <br></br>
       &nbsp; I speak English, French and Portuguese [currently learning Russian]
@@ -40,7 +42,10 @@ const Home: NextPage = () => {
       The Coding Garden, George Hotz and off course, Patrick Collins.
       <br />
       &nbsp;
-      <div>I'm open for hiring or collaboration.</div>
+      {/* <div>I'm open for hiring or collaboration.</div> */}
+      <div style={{ width: "70%", marginTop: "20px" }}>
+        <Image src={nft} height={600}></Image>
+      </div>
       <br></br>
       <br />
       <div>Discord: abhadira</div>
