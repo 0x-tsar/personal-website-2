@@ -48,7 +48,7 @@ const Home: NextPage = () => {
       </div>
       <br></br>
       <br />
-      <div>Discord: abhadira</div>
+      <div>Discord: bronzeDisc#9664</div>
       <div>email: contato.gustavofernandes@hotmail.com</div>
       <br />
       <div style={{ marginBottom: "5px" }}>
