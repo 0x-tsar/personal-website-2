@@ -43,9 +43,12 @@ export const EachArticle = (props: ArticleType) => {
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'column',
+        margin: '20px',
       }}
     >
-      <img style={{ maxWidth: '300px' }} src={props.picture} alt='thumb' />
+      {props.picture ? (
+        <img style={{ maxWidth: '300px' }} src={props.picture} alt='thumb' />
+      ) : null}
       <H2>{props.title}</H2>
       <P>{props.description}</P>
       <div>
