@@ -14,7 +14,7 @@ export const H2 = styled.div`
 `
 
 export const Container = styled.div`
-  background-color: blue;
+  /* background-color: blue; */
   color: black;
   font-size: 2em;
   display: flex;
