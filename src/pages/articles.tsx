@@ -1,11 +1,11 @@
-import React from "react";
-import type { NextPage } from "next";
-import { PanelArticles } from "../components/PanelArticles";
+import React from 'react'
+import type { NextPage } from 'next'
+import { PanelArticles } from '../components/PanelArticles'
 
-type Props = {};
+type Props = {}
 
 const Articles: NextPage = (props: Props) => {
-  return <PanelArticles></PanelArticles>;
-};
+  return <PanelArticles></PanelArticles>
+}
 
-export default Articles;
+export default Articles

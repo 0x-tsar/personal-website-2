@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import type { NextPage } from "next";
+import React, { useState, useEffect } from 'react'
+import type { NextPage } from 'next'
 
-import styled from "styled-components";
-import quotes from "../libs/quotes";
+import styled from 'styled-components'
+import quotes from '../libs/quotes'
 // import FetchData from "../api/FetchData";
 
 export const Container = styled.div`
@@ -10,16 +10,16 @@ export const Container = styled.div`
   justify-content: center;
   margin-top: 100px;
   font-size: 1.2em;
-`;
+`
 
 export const Holder = styled.div`
   padding: 0 100px;
-`;
+`
 
-type Props = {};
+type Props = {}
 
 const Quotes: NextPage = (props: Props) => {
-  const [randomQuote, setRandomQuote] = useState<string>();
+  const [randomQuote, setRandomQuote] = useState<string>()
 
   return (
     <Container>
@@ -29,7 +29,7 @@ const Quotes: NextPage = (props: Props) => {
           return (
             <div key={k}>
               {item.highlighted ? (
-                <span style={{ color: "red", fontWeight: "bolder" }}>
+                <span style={{ color: 'red', fontWeight: 'bolder' }}>
                   <p>{item.quote}</p>
                   <strong>{item.author}</strong>
                   <br></br>
@@ -44,11 +44,11 @@ const Quotes: NextPage = (props: Props) => {
                 </div>
               )}
             </div>
-          );
+          )
         })}
 
         <div
-          style={{ marginTop: 100, position: "relative", marginBottom: "40px" }}
+          style={{ marginTop: 100, position: 'relative', marginBottom: '40px' }}
         >
           {/* {randomQuote ? (
             <div>
@@ -66,7 +66,7 @@ const Quotes: NextPage = (props: Props) => {
         </div>
       </Holder>
     </Container>
-  );
-};
+  )
+}
 
-export default Quotes;
+export default Quotes

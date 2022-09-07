@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
 export const Container = styled.div`
   grid-area: main;
   background-color: blue;
-`;
+`
 
-type Props = {};
+type Props = {}
 
 const Main = (props: Props) => {
-  return <div>Main</div>;
-};
+  return <div>Main</div>
+}
 
-export default Main;
+export default Main

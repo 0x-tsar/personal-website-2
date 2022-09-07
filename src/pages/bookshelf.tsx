@@ -1,8 +1,8 @@
-import React from "react";
-import type { NextPage } from "next";
-import styled from "styled-components";
+import React from 'react'
+import type { NextPage } from 'next'
+import styled from 'styled-components'
 
-type Props = {};
+type Props = {}
 
 export const Container = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ export const Container = styled.div`
   align-items: center;
   margin-top: 30px;
   font-size: 1.2em;
-`;
+`
 
 const Bookshelf: NextPage = (props: Props) => {
   return (
@@ -94,13 +94,13 @@ const Bookshelf: NextPage = (props: Props) => {
       <br></br>
       <br></br>
       <br></br>
-      <div style={{ marginBottom: "200px" }}>
+      <div style={{ marginBottom: '200px' }}>
         [in construction...]
         <br></br>
         <br></br>
       </div>
     </Container>
-  );
-};
+  )
+}
 
-export default Bookshelf;
+export default Bookshelf

@@ -1,10 +1,10 @@
-import React, { PropsWithChildren, FC } from "react";
-import styled from "styled-components";
-import Header from "./Header";
+import React, { PropsWithChildren, FC } from 'react'
+import styled from 'styled-components'
+import Header from './Header'
 
 export const Container = styled.div`
   background-color: #feefe1;
-  font-family: "Anonymous Pro";
+  font-family: 'Anonymous Pro';
   color: black;
 
   min-width: 100vw;
@@ -16,11 +16,11 @@ export const Container = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: 100px;
   grid-template-areas:
-    "header"
-    "main";
-`;
+    'header'
+    'main';
+`
 
-type Props = {};
+type Props = {}
 
 const Layout: FC<PropsWithChildren<Props>> = ({ children }) => {
   return (
@@ -28,7 +28,7 @@ const Layout: FC<PropsWithChildren<Props>> = ({ children }) => {
       <Header />
       {children}
     </Container>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

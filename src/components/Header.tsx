@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import Link from "next/link";
+import React from 'react'
+import styled from 'styled-components'
+import Link from 'next/link'
 
 export const Container = styled.div`
   grid-area: header;
@@ -13,7 +13,7 @@ export const Container = styled.div`
     padding: 0;
     margin: 0;
   }
-`;
+`
 
 const Menu = styled.div`
   display: flex;
@@ -27,9 +27,9 @@ const Menu = styled.div`
       text-decoration: underline;
     }
   }
-`;
+`
 
-type Props = {};
+type Props = {}
 
 const Header = (props: Props) => {
   return (
@@ -37,32 +37,37 @@ const Header = (props: Props) => {
       <h1>Gustavo Fernandes v2</h1>
       <Menu>
         <li>
-          <Link href={"/"}>
+          <Link href={'/'}>
             <a>Home</a>
           </Link>
         </li>
         &nbsp;
         <li>
-          <Link href={"/quotes"}>
+          <Link href={'/quotes'}>
             <a>Quotes</a>
           </Link>
         </li>
         &nbsp;
         <li>
-          <Link href={"/bookshelf"}>
+          <Link href={'/bookshelf'}>
             <a>Bookshelf</a>
           </Link>
         </li>
         &nbsp;
         <li>
-          <Link href={"/projects"}>
-            <a>My Project</a>
+          <Link href={'/projects'}>
+            <a>My Projects</a>
           </Link>
         </li>
         &nbsp;
+        <li>
+          <Link href={'/articles'}>
+            <a>Articles</a>
+          </Link>
+        </li>
       </Menu>
     </Container>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
