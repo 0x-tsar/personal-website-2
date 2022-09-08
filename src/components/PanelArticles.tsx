@@ -35,56 +35,56 @@ type ArticleType = {
 }
 
 export const EachArticle = (props: ArticleType) => {
+  // console.log(props.title)
+
   return (
-    <Link href={'/articles/hello'}>
-      <div
-        style={{
-          padding: '20px',
-          cursor: 'pointer',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'column',
-          margin: '20px',
-        }}
-      >
-        {props.picture ? (
-          <img style={{ maxWidth: '300px' }} src={props.picture} alt='thumb' />
-        ) : null}
-        <H2>{props.title}</H2>
-        <P>{props.description}</P>
-        <div>
-          {props.tags?.map((item, key) => {
-            return (
-              <span
-                style={{
-                  fontSize: '15px',
-                  color: 'white',
-                  backgroundColor: 'red',
-                  borderRadius: '3px',
-                  maxWidth: 'fit-content',
-                  padding: '5px',
-                  marginLeft: '10px',
-                }}
-                key={key}
-              >
-                {item}
-              </span>
-            )
-          })}
-        </div>
-        <div
-          style={
-            {
-              // width: '100%',
-              // height: '2px',
-              // backgroundColor: 'black',
-              // marginTop: '5px',
-            }
-          }
-        ></div>
+    <div
+      style={{
+        padding: '20px',
+        cursor: 'pointer',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+        margin: '20px',
+      }}
+    >
+      {props.picture ? (
+        <img style={{ maxWidth: '300px' }} src={props.picture} alt='thumb' />
+      ) : null}
+      <H2>{props.title}</H2>
+      <P>{props.description}</P>
+      <div>
+        {props.tags?.map((item, key) => {
+          return (
+            <span
+              style={{
+                fontSize: '15px',
+                color: 'white',
+                backgroundColor: 'red',
+                borderRadius: '3px',
+                maxWidth: 'fit-content',
+                padding: '5px',
+                marginLeft: '10px',
+              }}
+              key={key}
+            >
+              {item}
+            </span>
+          )
+        })}
       </div>
-    </Link>
+      <div
+        style={
+          {
+            // width: '100%',
+            // height: '2px',
+            // backgroundColor: 'black',
+            // marginTop: '5px',
+          }
+        }
+      ></div>
+    </div>
   )
 }
 
@@ -93,14 +93,23 @@ export const PanelArticles = (props: Props) => {
     <Container>
       {articles.map((item, key) => {
         return (
-          <EachArticle
+          <Link
             key={key}
-            title={item.title}
-            description={item.description}
-            tags={item.tags}
-            text={item.text}
-            picture={item.picture}
-          ></EachArticle>
+            href={{
+              pathname: `/articles/${item.title}`,
+              query: item,
+            }}
+          >
+            <a>
+              <EachArticle
+                title={item.title}
+                description={item.description}
+                tags={item.tags}
+                text={item.text}
+                picture={item.picture}
+              ></EachArticle>
+            </a>
+          </Link>
         )
       })}
     </Container>
