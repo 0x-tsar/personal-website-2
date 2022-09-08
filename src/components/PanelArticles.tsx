@@ -88,7 +88,7 @@ export const EachArticle = (props: ArticleType) => {
   )
 }
 
-export const PanelArticles = (props: Props) => {
+export const PanelArticles = () => {
   return (
     <Container>
       {articles.map((item, key) => {

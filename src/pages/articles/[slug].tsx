@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import type { NextPage } from 'next'
 import { useRouter } from 'next/router'
@@ -24,7 +25,7 @@ const DetailedArticle: NextPage = (props: Props) => {
   return (
     <Container>
       <h1>{title}</h1>
-      <img src={picture} alt='' />
+      <img src={picture as string} alt='' />
       <p>{description}</p>
     </Container>
   )
