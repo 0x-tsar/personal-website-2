@@ -60,9 +60,11 @@ const Header = (props: Props) => {
           </Link>
         </li>
         &nbsp;
-        <li>
+        <li style={{ pointerEvents: 'none' }}>
           <Link href={'/articles'}>
-            <a>Articles</a>
+            <a>
+              <s>Articles [WIP]</s>
+            </a>
           </Link>
         </li>
       </Menu>
