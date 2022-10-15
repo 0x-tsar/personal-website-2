@@ -20,6 +20,20 @@ export const Post = styled.div`
 
 const projects = [
   {
+    title: 'Ethereum Wallet Generator',
+    description:
+      'Generate Ethereum wallets with a single click. No need to download or install anything.',
+    website: 'https://create-wallet-rosy.vercel.app/',
+    image: (
+      <img
+        src='https://storage.cloud.google.com/staging.recycler-teste.appspot.com/wallet-generator.png'
+        width='100%'
+        alt=''
+      ></img>
+    ),
+    // github: 'https://github.com/BronzeDisc/soccer-cards',
+  },
+  {
     title: 'Soccer NFT Cards',
     description:
       'Soccer Cards, Opensea compatible (MUMBAI NETWORK ONLY! Update to mumbai network and reload the page!)',

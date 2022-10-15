@@ -5,13 +5,13 @@ import styled from 'styled-components'
 import articles from '../libs/articles'
 
 export const P = styled.div`
-  padding: 0;
-  margin: 0;
+  padding: 10;
+  margin: 10;
 `
 
 export const H2 = styled.div`
-  padding: 0;
-  margin: 0;
+  padding: 10;
+  margin: 10;
 `
 
 export const Container = styled.div`
@@ -40,17 +40,19 @@ export const EachArticle = (props: ArticleType) => {
   return (
     <div
       style={{
-        padding: '20px',
+        padding: '40px',
         cursor: 'pointer',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'column',
         margin: '20px',
+
+        fontSize: '0.7em',
       }}
     >
       {props.picture ? (
-        <img style={{ maxWidth: '300px' }} src={props.picture} alt='thumb' />
+        <img style={{ maxWidth: '400px' }} src={props.picture} alt='thumb' />
       ) : null}
       <H2>{props.title}</H2>
       <P>{props.description}</P>
@@ -61,7 +63,7 @@ export const EachArticle = (props: ArticleType) => {
               style={{
                 fontSize: '15px',
                 color: 'white',
-                backgroundColor: 'red',
+                backgroundColor: 'blue',
                 borderRadius: '3px',
                 maxWidth: 'fit-content',
                 padding: '5px',
@@ -88,7 +90,7 @@ export const EachArticle = (props: ArticleType) => {
   )
 }
 
-export const PanelArticles = () => {
+export const PanelArticles = (props: Props) => {
   return (
     <Container>
       {articles.map((item, key) => {
