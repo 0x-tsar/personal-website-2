@@ -60,11 +60,11 @@ const Header = (props: Props) => {
           </Link>
         </li>
         &nbsp;
-        <li>
+        <li style={{ cursor: 'default' }}>
           <Link href={'/articles'}>
-            <a>
-              Articles
-              {/* <s>Articles [WIP]</s> */}
+            <a style={{ pointerEvents: 'none' }}>
+              {/* Articles */}
+              <s>Articles [WIP]</s>
             </a>
           </Link>
         </li>
