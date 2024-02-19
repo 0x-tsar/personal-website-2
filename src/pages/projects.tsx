@@ -176,7 +176,6 @@ const projects = [
         alt=''
       ></img>
     ),
-    //
   },
   {
     title: 'ERC721 Holder built from scratch',
