@@ -20,6 +20,19 @@ export const Post = styled.div`
 
 const projects = [
   {
+    title: 'Biological system',
+    description:
+      'A reward system for a car evolution simulation, assigning rewards based on performance and improvements each generation. Done with p5.js',
+    video: (
+      <video width='100%' autoPlay muted loop>
+        <source
+          src='https://storage.googleapis.com/staging.recycler-teste.appspot.com/video20.mp4'
+          type='video/mp4'
+        />
+      </video>
+    ),
+  },
+  {
     title: 'Ethereum Wallet Generator',
     description:
       'Generate Ethereum wallets with a single click. No need to download or install anything.',
@@ -489,7 +502,7 @@ const Projects: NextPage = (props: Props) => {
               ''
             )}
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              {item.image}
+              {item.image || item.video}
             </div>
             <br />
             {item.github ? (

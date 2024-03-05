@@ -4,7 +4,6 @@ import Link from 'next/link'
 
 export const Container = styled.div`
   grid-area: header;
-
   display: flex;
   justify-content: space-around;
   padding-top: 2em;
@@ -34,7 +33,7 @@ type Props = {}
 const Header = (props: Props) => {
   return (
     <Container>
-      <h1>Gustavo Fernandes v2</h1>
+      <h1>Gustavo Fernandes</h1>
       <Menu>
         <li>
           <Link href={'/'}>
@@ -54,9 +53,21 @@ const Header = (props: Props) => {
           </Link>
         </li>
         &nbsp;
-        <li>
+        <li style={{}}>
           <Link href={'/projects'}>
             <a>My Projects</a>
+          </Link>
+        </li>
+        &nbsp;
+        <li
+          style={{
+            fontWeight: 'bold',
+            backgroundColor: 'blue',
+            color: 'white',
+          }}
+        >
+          <Link href={'/curriculum'}>
+            <a>Curriculum</a>
           </Link>
         </li>
         &nbsp;
